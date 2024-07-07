@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc_css.css">
+</head>
+<body>
+    <h1>Calculate your carbon footprint</h1>
+    <h2>Choose one</h2>
+    <button class="user_choice" id="ind">I'm an individual</button>
+    <button class="user_choice" id="soc">I represent my co-op housing society</button>
+
+    <form class="choice">
+        <p class="indiv">Choose the area you live in</p>
+        <p class="society">Choose the area of your society</p>
+
+        <select class="area">
+            <option id="op1">Select</option>
+            <option id="op2">Rural</option>
+            <option id="op3">Suburban</option>
+            <option id="op4">Urban</option>
+            <option id="op5">Metropolitan</option>
+        </select>
+        <br>
+        <p class="indiv">Enter monthly electricity consumption (in KWh)</p>
+        <p class="society">Enter average monthly electricity consumption of each house in the society(in KWh)</p>
+
+        <input type="number" placeholder="Enter here" id="e_bill">
+        <br>
+        <p class="indiv">Which cooking gas do you use?</p>
+        <p class="society">Does the society have a pipeline connection, or do the residents use LPG cylinders?</p>
+
+        <button type="button" class= "gas_choice" id="cyl">LPG Cylinders</button>
+        <button type="button" class= "gas_choice" id="pipe">Gas Pipeline</button>
+        <div class="gas a">
+            <p class="indiv">Enter the number of gas cylinders you buy in a year</p>
+            <p class="society">Enter the average no. of gas cylinders purchased in a year by the society</p>
+
+            <input type="number" id="cyl_bill">
+
+        </div>
+        <div class="gas b">
+            <p class="indiv">Enter the monthly gas consumption (in std. cubic metre)</p>
+            <p class="society">Enter the average amount of gas used per month (in std. cubic metre)</p>
+
+            <input type="number" id="pipe_bill">
+        </div>
+        <br>
+        <p class="society">Enter the no. of houses in the society</p>
+        <input type="number" id="house_no" class="society">
+
+        <br>
+        <button type="submit" id="submit_but">I want to calculate my carbon footprint</button>
+    </form> 
+    <script src="calc_js.js"></script>
+    <br><br>
+    <a href="https://forms.gle/eXDESp2NvfBQQ4Zk7">Click on this</a>
+</body>
+</html>
